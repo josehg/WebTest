@@ -1,3 +1,4 @@
+require('file-loader?name=[name].[ext]!./index.html');
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -33,5 +34,5 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ReactNativeWeb', () => ReactNativeWeb);
+AppRegistry.registerComponent('WebTest', () => ReactNativeWeb);
 AppRegistry.runApplication('WebTest', { rootTag: document.getElementById('react-native-app') });
